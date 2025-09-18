@@ -1,9 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lindsey’s Cafe – Home</title>
+  <meta name="description" content="Lindsey’s Cafe: craft coffee, fresh pastries, cozy vibes. Make a reservation with Calendly." />
+  <link rel="icon" href="assets/hero.jpg" />
+  <meta property="og:title" content="Lindsey’s Cafe" />
+  <meta property="og:description" content="Craft coffee, fresh pastries, and cozy vibes." />
+  <meta property="og:image" content="assets/hero.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
 <body>
-  <!-- Proper overlay HEADER on top of hero -->
-  <header class="site-header">
+  <header class="header">
     <div class="container nav">
       <div class="brand">
-        <img class="logo" src="assets/logo.png" alt="Lindsey’s Cafe logo">
+        <img class="logo" src="assets/logo.png" alt="Lindsey’s Cafe logo" />
         Lindsey’s Cafe
       </div>
       <nav>
@@ -15,32 +28,27 @@
     </div>
   </header>
 
-  <!-- HERO as background image -->
-  <section class="hero-hero" role="img" aria-label="Lindsey’s Cafe hero image with fall, European street vibes">
-    <div class="hero-inner">
-      <h1>Craft coffee. Fresh pastries. Cozy vibes.</h1>
-      <p>Welcome to <strong>Lindsey’s Cafe</strong> — your neighborhood spot for perfectly pulled espresso, flaky croissants, and bright, seasonal bites.</p>
-      <a class="cta" href="reservations.html">Reserve a Table</a>
-    </div>
-  </section>
-
-  <!-- Rest of your homepage sections (optional) -->
+  <main>
+    <section class="section">
+      <div class="container hero">
+        <div class="hero-inner">
+          <div>
+            <h1>Craft coffee. Fresh pastries. Cozy vibes.</h1>
+            <p>Welcome to <strong>Lindsey’s Cafe</strong> — your neighborhood spot for perfectly pulled espresso, flaky croissants, and bright, seasonal bites.</p>
+            <p><a class="cta" href="reservations.html">Reserve a Table</a></p>
+          </div>
+          <img src="assets/hero.jpg" alt="Cozy cafe interior" />
+        </div>
+      </div>
+    </section>
+  </main>
 
   <footer class="footer">
     <div class="container">
       © <span id="year"></span> Lindsey’s Cafe · <a href="mailto:hello@lindseyscafe.net">hello@lindseyscafe.net</a>
     </div>
   </footer>
-
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  <!-- header scroll script -->
-  <script>
-    document.addEventListener('scroll', () => {
-      const sh = document.querySelector('.site-header');
-      if (!sh) return;
-      if (window.scrollY > 40) sh.classList.add('scrolled');
-      else sh.classList.remove('scrolled');
-    });
-  </script>
 </body>
+</html>
 
