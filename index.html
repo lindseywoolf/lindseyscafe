@@ -1,17 +1,31 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Lindsey’s Cafe – Home</title>
-  <meta name="description" content="Lindsey’s Cafe: craft coffee, fresh pastries, cozy vibes. Make a reservation with Calendly." />
+
+  <title>Lindsey’s Cafe — Home</title> <!-- Change to About / Reservations per page -->
+  <meta name="description" content="Craft coffee, fresh pastries, cozy vibes at Lindsey’s Cafe." />
+
   <link rel="icon" href="assets/hero.jpg" />
-  <meta property="og:title" content="Lindsey’s Cafe" />
-  <meta property="og:description" content="Craft coffee, fresh pastries, and cozy vibes." />
-  <meta property="og:image" content="assets/hero.jpg" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="styles.css?v=4" />
+  <script defer src="script.js?v=2"></script>
+
+  <!-- Inline safety styles (force warm bg + responsive images) -->
+  <style>
+    body {
+      background:
+        radial-gradient(1200px 600px at 20% -10%, rgba(255, 228, 196, 0.35), transparent 60%),
+        radial-gradient(800px 500px at 100% 0%, rgba(255, 215, 170, 0.25), transparent 55%),
+        linear-gradient(#fff8e7, #fff4dc);
+    }
+    html, body { height: 100%; overflow-x: hidden; margin: 0; }
+    .container { max-width: min(1100px, 100%); margin: 0 auto; padding: 0 16px; }
+    img, video, canvas, svg { display: block; max-width: 100%; width: 100%; height: auto; }
+  </style>
 </head>
+
 <body>
   <header class="header">
     <div class="container nav">
