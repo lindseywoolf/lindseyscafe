@@ -1,0 +1,72 @@
+<!-- Shared <head> snippet to copy onto each page -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lindsey’s Cafe – Specialty Coffee & Fresh Bites</title>
+<meta name="description" content="Lindsey’s Cafe in your neighborhood: craft coffee, fresh pastries, and cozy vibes. Reserve a table or drop by for something delicious." />
+<link rel="icon" href="assets/hero.jpg" />
+<meta property="og:title" content="Lindsey’s Cafe" />
+<meta property="og:description" content="Craft coffee, fresh pastries, and cozy vibes." />
+<meta property="og:image" content="assets/hero.jpg" />
+<meta property="og:type" content="website" />
+<link rel="preload" href="assets/hero.jpg" as="image" />
+<link rel="stylesheet" href="styles.css" />
+<script defer src="script.js"></script>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- shared head -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About – Lindsey’s Cafe</title>
+  <meta name="description" content="The story of Lindsey’s Cafe—community, craft, and cozy hospitality." />
+  <link rel="icon" href="assets/hero.jpg" />
+  <meta property="og:title" content="About Lindsey’s Cafe" />
+  <meta property="og:description" content="Community, craft coffee, and cozy hospitality." />
+  <meta property="og:image" content="assets/interior.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Lindsey’s Cafe</div>
+      <nav>
+        <a href="index.html" data-nav>Home</a>
+        <a href="menu.html" data-nav>Menu</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="reservations.html" class="button" data-nav>Reservations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container split">
+      <div>
+        <h2>About Us</h2>
+        <p>
+          Lindsey’s Cafe began with a simple idea: serve excellent coffee and fresh food
+          in a warm, welcoming space. We partner with local roasters and bakers, source
+          seasonal produce, and craft a menu that’s simple, bright, and delicious.
+        </p>
+        <p style="margin-top:12px;">
+          Whether you’re grabbing a latte on the go or settling in for brunch,
+          we’re here for the everyday rituals that make life better.
+        </p>
+        <p style="margin-top:12px;">
+          <strong>Address</strong><br />
+          123 Coffee Lane, Your City, ST 00000<br />
+          <strong>Hours</strong> · Mon–Sun 7:00a–4:00p
+        </p>
+      </div>
+      <img src="assets/interior.jpg" alt="Cafe interior with warm lighting and plants" />
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Lindsey’s Cafe</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+

@@ -1,0 +1,108 @@
+<!-- Shared <head> snippet to copy onto each page -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Lindsey’s Cafe – Specialty Coffee & Fresh Bites</title>
+<meta name="description" content="Lindsey’s Cafe in your neighborhood: craft coffee, fresh pastries, and cozy vibes. Reserve a table or drop by for something delicious." />
+<link rel="icon" href="assets/hero.jpg" />
+<meta property="og:title" content="Lindsey’s Cafe" />
+<meta property="og:description" content="Craft coffee, fresh pastries, and cozy vibes." />
+<meta property="og:image" content="assets/hero.jpg" />
+<meta property="og:type" content="website" />
+<link rel="preload" href="assets/hero.jpg" as="image" />
+<link rel="stylesheet" href="styles.css" />
+<script defer src="script.js"></script>
+
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- shared head -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Menu – Lindsey’s Cafe</title>
+  <meta name="description" content="Explore Lindsey’s Cafe menu: espresso drinks, teas, pastries, and brunch bites." />
+  <link rel="icon" href="assets/hero.jpg" />
+  <meta property="og:title" content="Lindsey’s Cafe Menu" />
+  <meta property="og:description" content="Espresso, teas, pastries, and seasonal plates." />
+  <meta property="og:image" content="assets/latte.jpg" />
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <div class="brand">Lindsey’s Cafe</div>
+      <nav>
+        <a href="index.html" data-nav>Home</a>
+        <a href="menu.html" data-nav>Menu</a>
+        <a href="about.html" data-nav>About</a>
+        <a href="reservations.html" class="button" data-nav>Reservations</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2>Our Menu</h2>
+      <p>Seasonal ingredients, locally roasted beans, baked-fresh pastries.</p>
+
+      <h3 style="margin-top:20px;">Coffee & Tea</h3>
+      <div class="menu-grid">
+        <article class="card">
+          <img src="assets/latte.jpg" alt="Latte art" />
+          <div class="card-body">
+            <div class="title">Latte</div>
+            <p class="desc">Double shot + steamed milk.</p>
+            <div class="price">$5.00</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/cookie.jpg" alt="Iced coffee glass" />
+          <div class="card-body">
+            <div class="title">Cold Brew</div>
+            <p class="desc">Slow-steeped, smooth & bold.</p>
+            <div class="price">$4.75</div>
+          </div>
+        </article>
+      </div>
+
+      <h3 style="margin-top:28px;">Pastries</h3>
+      <div class="menu-grid">
+        <article class="card">
+          <img src="assets/croissant.jpg" alt="Croissant" />
+          <div class="card-body">
+            <div class="title">Butter Croissant</div>
+            <p class="desc">Flaky layers, real butter.</p>
+            <div class="price">$3.95</div>
+          </div>
+        </article>
+        <article class="card">
+          <img src="assets/cookie.jpg" alt="Chocolate chip cookie" />
+          <div class="card-body">
+            <div class="title">Chocolate Chip Cookie</div>
+            <p class="desc">Chewy, melty, perfect.</p>
+            <div class="price">$2.95</div>
+          </div>
+        </article>
+      </div>
+
+      <h3 style="margin-top:28px;">Plates</h3>
+      <div class="menu-grid">
+        <article class="card">
+          <img src="assets/avocado-toast.jpg" alt="Avocado toast" />
+          <div class="card-body">
+            <div class="title">Avocado Toast</div>
+            <p class="desc">Lemon, chili, herbs on sourdough.</p>
+            <div class="price">$8.50</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Lindsey’s Cafe</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
