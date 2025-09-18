@@ -8,6 +8,27 @@
   <link rel="icon" href="assets/hero.jpg" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
+
+  <!-- Force full-viewport PDF below the header -->
+  <style>
+    :root { --header-h: 64px; }
+    html, body { height: 100%; margin: 0; }
+    .header { height: var(--header-h); }
+    .pdf-wrap {
+      height: calc(100vh - var(--header-h));
+      width: 100vw;           /* full width of the viewport */
+      max-width: 100%;
+      margin: 0; padding: 0;
+    }
+    .pdf-embed {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    /* Remove default spacing some browsers add around <object>/<iframe> */
+    object, iframe { display: block; }
+  </style>
 </head>
 <body>
   <header class="header">
@@ -23,9 +44,9 @@
 
   <!-- Full-viewport PDF panel -->
   <div class="pdf-wrap">
-    <!-- Try <object> first (best native PDF display), fall back to download link -->
-    <object class="pdf-embed" data="assets/menu.pdf" type="application/pdf">
-      <iframe class="pdf-embed" src="assets/menu.pdf"></iframe>
+    <!-- Try <object> first (native PDF), fall back to <iframe>, then link -->
+    <object class="pdf-embed" data="assets/menu.pdf" type="application/pdf" style="width:100%;height:100%;border:0;">
+      <iframe class="pdf-embed" src="assets/menu.pdf" style="width:100%;height:100%;border:0;"></iframe>
       <div class="container section">
         <p>Can’t display the PDF? <a href="assets/menu.pdf" download>Download the menu</a>.</p>
       </div>
