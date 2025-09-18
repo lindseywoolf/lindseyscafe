@@ -96,3 +96,59 @@ p  { color: #475569; margin: 8px 0; }
   nav { flex-wrap: wrap; }
 }
 
+/* ===== Chunky Nav Bar Buttons ===== */
+.nav-rail {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background: linear-gradient(180deg, #fffaf0, #ffe9c9);
+  border: 1px solid rgba(31,41,55,.12);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(31,41,55,.08);
+}
+
+.nav-rail a.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #1f2937;
+  background: #ffffff;
+  border: 1px solid rgba(31,41,55,.12);
+  transition: transform 120ms ease, box-shadow 120ms ease, background 120ms ease;
+  white-space: nowrap;
+}
+
+.nav-rail a.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(31,41,55,.12);
+  background: #fff7ec;
+}
+
+.nav-rail a.btn.active {
+  background: #1f2937;
+  color: #ffffff;
+  border-color: #1f2937;
+  box-shadow: 0 6px 14px rgba(31,41,55,.25);
+}
+
+/* Make the Reservations button “primary” */
+.nav-rail a.btn.primary {
+  background: #1f2937;
+  color: #fff;
+  border-color: #1f2937;
+}
+.nav-rail a.btn.primary:hover {
+  background: #111827;
+}
+
+/* Responsive: wrap nicely on small screens */
+@media (max-width: 640px) {
+  .nav-rail { flex-wrap: wrap; justify-content: center; }
+  .nav { justify-content: center; } /* center the whole nav in header */
+}
+
