@@ -1,33 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <!-- Shared head -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reservations – Lindsey’s Cafe</title>
   <meta name="description" content="Reserve a table at Lindsey’s Cafe via Calendly." />
   <link rel="icon" href="assets/hero.jpg" />
-  <meta property="og:title" content="Reserve at Lindsey’s Cafe" />
-  <meta property="og:description" content="Book a table quickly and easily." />
-  <meta property="og:image" content="assets/hero.jpg" />
-  <meta property="og:type" content="website" />
-  <link rel="preload" href="assets/hero.jpg" as="image" />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="script.js"></script>
-
-  <!-- Calendly widget -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </head>
 <body>
-  <!-- Site HEADER (brand + nav) -->
   <header class="header">
     <div class="container nav">
-      <div class="brand">Lindsey’s Cafe</div>
+      <div class="brand">
+        <img class="logo" src="assets/logo.png" alt="Lindsey’s Cafe logo" />
+        Lindsey’s Cafe
+      </div>
       <nav>
         <a href="index.html" data-nav>Home</a>
-        <a href="menu.html" data-nav>Menu</a>
         <a href="about.html" data-nav>About</a>
+        <a href="menu.html" data-nav>Menu</a>
         <a href="reservations.html" class="button" data-nav>Reservations</a>
       </nav>
     </div>
@@ -37,19 +31,16 @@
     <div class="container">
       <h2>Reservations</h2>
       <p>Pick a date and time that works for you — we’ll have a table ready.</p>
-
-      <!-- Inline Calendly embed (your link) -->
-      <div
-        class="calendly-inline-widget"
-        data-url="https://calendly.com/woolflindsey/30min"
-        style="min-width:320px;height:760px;margin-top:16px;">
-      </div>
+      <div class="calendly-inline-widget"
+           data-url="https://calendly.com/woolflindsey/30min"
+           style="min-width:320px;height:760px;margin-top:16px;"></div>
     </div>
   </main>
 
   <footer class="footer">
-    <div class="container">© <span id="year"></span> Lindsey’s Cafe · <a href="mailto:hello@lindseyscafe.net">hello@lindseyscafe.net</a></div>
+    <div class="container">© <span id="year"></span> Lindsey’s Cafe</div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
+

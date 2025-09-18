@@ -1,8 +1,9 @@
-// Simple helper to set "active" nav link based on current page
+// Highlight active nav link
 (function () {
-  const path = location.pathname.split('/').pop() || 'index.html';
+  const current = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
   document.querySelectorAll('nav a[data-nav]').forEach(a => {
-    if (a.getAttribute('href') === path) a.classList.add('active');
+    const href = (a.getAttribute('href') || '').toLowerCase();
+    if (href === current) a.classList.add('active');
   });
 })();
 
