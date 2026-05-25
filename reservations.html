@@ -3,38 +3,46 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Reservations – Lindsey’s Cafe</title>
-  <meta name="description" content="Reserve a table at Lindsey’s Cafe via Calendly." />
+  <title>Lindsey's Cafe — Reservations</title>
+  <meta name="description" content="Reserve a table at Lindsey's Cafe via Calendly." />
   <link rel="icon" href="assets/hero.jpg" />
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="styles.css?v=5" />
+  <script defer src="script.js?v=2"></script>
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </head>
 <body>
+
   <header class="header">
     <div class="container nav">
-<nav class="nav-rail">
-  <a href="index.html" class="btn" data-nav>Home</a>
-  <a href="about.html" class="btn" data-nav>About</a>
-  <a href="menu.html" class="btn" data-nav>Menu</a>
-  <a href="reservations.html" class="btn primary" data-nav>Reservations</a>
-</nav>    
-</div>
+      <nav class="nav-rail">
+        <a href="index.html" class="btn" data-nav>Home</a>
+        <a href="about.html" class="btn" data-nav>About</a>
+        <a href="menu.html" class="btn" data-nav>Menu</a>
+        <a href="reservations.html" class="btn primary" data-nav>Reservations</a>
+      </nav>
+      <div class="brand">
+        <img class="logo" src="assets/logo.png" alt="Lindsey's Cafe logo" />
+      </div>
+    </div>
   </header>
 
-  <main class="section">
-    <div class="container">
-      <h2>Reservations</h2>
-      <p>Pick a date and time that works for you — we’ll have a table ready.</p>
-      <div class="calendly-inline-widget"
-           data-url="https://calendly.com/woolflindsey/30min"
-           style="min-width:320px;height:760px;margin-top:16px;"></div>
-    </div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="reservations-intro">
+          <h2>Reservations</h2>
+          <p>Pick a date and time that works for you — we'll have a table ready. Payment in kisses accepted at the door.</p>
+        </div>
+        <div class="calendly-inline-widget"
+             data-url="https://calendly.com/woolflindsey/30min"
+             style="min-width:320px;height:760px;margin-top:24px;"></div>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
-    <div class="container">© <span id="year"></span> Lindsey’s Cafe</div>
+    <div class="container">© <span id="year"></span> Lindsey's Cafe</div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
