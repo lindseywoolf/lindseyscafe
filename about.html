@@ -1,59 +1,57 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-  <title>Lindsey’s Cafe — Home</title> <!-- Change to About / Reservations per page -->
-  <meta name="description" content="Craft coffee, fresh pastries, cozy vibes at Lindsey’s Cafe." />
-
+  <title>Lindsey's Cafe — About</title>
+  <meta name="description" content="The story behind Lindsey's Cafe — craft coffee, cozy vibes, dogs welcome." />
   <link rel="icon" href="assets/hero.jpg" />
-  <link rel="stylesheet" href="styles.css?v=4" />
+  <link rel="stylesheet" href="styles.css?v=5" />
   <script defer src="script.js?v=2"></script>
-
-  <!-- Inline safety styles (force warm bg + responsive images) -->
-  <style>
-    body {
-      background:
-        radial-gradient(1200px 600px at 20% -10%, rgba(255, 228, 196, 0.35), transparent 60%),
-        radial-gradient(800px 500px at 100% 0%, rgba(255, 215, 170, 0.25), transparent 55%),
-        linear-gradient(#fff8e7, #fff4dc);
-    }
-    html, body { height: 100%; overflow-x: hidden; margin: 0; }
-    .container { max-width: min(1100px, 100%); margin: 0 auto; padding: 0 16px; }
-    img, video, canvas, svg { display: block; max-width: 100%; width: 100%; height: auto; }
-  </style>
 </head>
-
 <body>
+
   <header class="header">
     <div class="container nav">
-<nav class="nav-rail">
-  <a href="index.html" class="btn" data-nav>Home</a>
-  <a href="about.html" class="btn" data-nav>About</a>
-  <a href="menu.html" class="btn" data-nav>Menu</a>
-  <a href="reservations.html" class="btn primary" data-nav>Reservations</a>
-</nav>      
-<div class="brand">
-        <img class="logo" src="assets/logo.png" alt="Lindsey’s Cafe logo" />
+      <nav class="nav-rail">
+        <a href="index.html" class="btn" data-nav>Home</a>
+        <a href="about.html" class="btn" data-nav>About</a>
+        <a href="menu.html" class="btn" data-nav>Menu</a>
+        <a href="reservations.html" class="btn primary" data-nav>Reservations</a>
+      </nav>
+      <div class="brand">
+        <img class="logo" src="assets/logo.png" alt="Lindsey's Cafe logo" />
       </div>
     </div>
   </header>
 
-<main class="section centered">
-  <div class="container split">
-    <div>
-      <h2>About Us</h2>
-      <p>Lindsey's Cafe opened in October 2024. What started as a small business out of my kitchen has grown into a huge buisness, still from my kitchen. We love our seasonal menus, our cafe regulars, and unique forms of payment. Thank you for supporting your local small buisness!</p><p>Queer Owned</p><p>Woman Owned</p><p>Dog Friendly</p>
-    </div>
-  </div>
-</main>
-  
-<footer class="footer">
-    <div class="container">© <span id="year"></span> Lindsey’s Cafe</div>
+  <main>
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-text">
+            <h2>About Us</h2>
+            <p>Lindsey's Cafe opened in October 2024. What started as a small business out of my kitchen has grown into a huge buisness, still from my kitchen. We love our seasonal menus, our cafe regulars, and unique forms of payment. Thank you for supporting your local small buisness!</p>
+            <div class="about-badges">
+              <span class="badge">🌈 Queer Owned</span>
+              <span class="badge">♀ Woman Owned</span>
+              <span class="badge">🐾 Dog Friendly</span>
+            </div>
+          </div>
+
+          <div class="about-image-wrap">
+            <img src="assets/hero.jpg" alt="Lindsey's Cafe exterior, warm evening light on cobblestone street" />
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Lindsey's Cafe</div>
   </footer>
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
-
