@@ -402,8 +402,8 @@ main { padding-top: 0; }
 /* ── Responsive ────────────────────────────────────── */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; gap: 40px; }
-  .about-image-wrap { display: none; } /* hide image on mobile, text-only */
-  .menu-sections { grid-template-columns: 1fr; gap: 32px; }
+  .about-image-wrap { display: none; }
+  .menu-sections { grid-template-columns: 1fr !important; gap: 32px; }
 }
 @media (max-width: 640px) {
   .nav { justify-content: center; }
