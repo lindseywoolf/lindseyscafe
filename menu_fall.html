@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lindsey's Cafe — Fall Menu</title>
+  <meta name="description" content="View the full Lindsey's Cafe menu — human food and dogs only." />
+  <link rel="icon" href="assets/hero_fall.jpg" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+  <script defer src="script.js?v=2"></script>
+</head>
+<body>
+
+  <header class="header">
+    <div class="container nav">
+      <nav class="nav-rail">
+        <a href="index.html" class="btn" data-nav>Home</a>
+        <a href="about.html" class="btn" data-nav>About</a>
+        <a href="menu_fall.html" class="btn" data-nav>Menu</a>
+        <a href="reservations.html" class="btn primary" data-nav>Reservations</a>
+      </nav>
+      <div class="brand">
+        <img class="logo" src="assets/logo.png" alt="Lindsey's Cafe logo" />
+      </div>
+    </div>
+  </header>
+
+  <main class="menu-page">
+    <div class="container">
+
+      <div class="menu-header">
+        <h1>Fall Menu</h1>
+        <div class="menu-divider"></div>
+        <p>Seasonal. Homemade. Priced in the only currency that matters.</p>
+      </div>
+
+      <div class="menu-sections" style="grid-template-columns: 1fr 1fr 1fr;">
+
+        <!-- Human Food -->
+        <div>
+          <h2 class="menu-section-title">🍽 Human Food</h2>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Pumpkin French Toast</p>
+              <p class="menu-item-desc">Thick-cut brioche soaked in pumpkin custard, dusted with cinnamon sugar, with side of whipped creme.</p>
+              <span class="menu-item-tag">Gluten Free</span>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Pumpkin Pancakes</p>
+              <p class="menu-item-desc">Fluffy spiced pumpkin pancakes topped with candied pecans and whipped creme.</p>
+              <span class="menu-item-tag">Gluten Free</span>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Autumn Hash</p>
+              <p class="menu-item-desc">Roasted sweet potato, apple, and sausage hash finished with a fried egg.</p>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+        </div>
+
+        <!-- Coffee -->
+        <div>
+          <h2 class="menu-section-title">☕ Coffee</h2>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Americano</p>
+              <p class="menu-item-desc">Espresso and hot water. Simple, bold, perfect.</p>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Espresso</p>
+              <p class="menu-item-desc">A straight shot. No notes.</p>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Cappuccino</p>
+              <p class="menu-item-desc">Espresso with steamed milk and a thick layer of foam.</p>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Milk Options</p>
+              <p class="menu-item-desc">Oat · Almond · Fairlife</p>
+            </div>
+            <span class="menu-price">+1 Kiss</span>
+          </div>
+        </div>
+
+        <!-- Dogs Only -->
+        <div>
+          <h2 class="menu-section-title">🐾 Dogs Only</h2>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Pup Cup</p>
+              <p class="menu-item-desc">Whipped Creme. They deserve it.</p>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+
+          <div class="menu-item">
+            <div class="menu-item-info">
+              <p class="menu-item-name">Frozen Berry Slush</p>
+              <p class="menu-item-desc">A refreshing frozen blend of mixed berries. Summer in a bowl.</p>
+            </div>
+            <span class="menu-price">1 Kiss</span>
+          </div>
+        </div>
+
+      </div><!-- /menu-sections -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Lindsey's Cafe</div>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
